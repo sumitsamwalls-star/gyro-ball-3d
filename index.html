@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Gyro Ball 3D</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --accent: #f59e0b;
+            --bg-dark: #0f172a;
+            --surface-dark: #1e293b;
+            --text-main: #334155;
+            --text-heading: #0f172a;
+            --text-muted: #64748b;
+            --border-light: #e2e8f0;
+            --card-bg: #ffffff;
+            --tag-bg: #eff6ff;
+            --tag-text: #1d4ed8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: #f8fafc;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+            border-bottom: 3px solid #3b82f6;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            border: 1px solid rgba(96, 165, 250, 0.4);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-top: 16px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-item strong {
+            color: #e2e8f0;
+        }
+
+        main {
+            max-width: 860px;
+            margin: -24px auto 48px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 36px 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-light);
+            margin-bottom: 24px;
+        }
+
+        .summary-box {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+
+        .summary-box h3 {
+            color: #166534;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .summary-box ul {
+            padding-left: 20px;
+            color: #15803d;
+            font-size: 0.95rem;
+        }
+
+        .summary-box li {
+            margin-bottom: 4px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--text-heading);
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--text-heading);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 1rem;
+            color: #475569;
+        }
+
+        ul, ol {
+            margin-bottom: 18px;
+            padding-left: 24px;
+            color: #475569;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 14px;
+            border: 1px solid var(--border-light);
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--text-heading);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .badge-secure {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .badge-admob {
+            display: inline-block;
+            background: #fef3c7;
+            color: #b45309;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .badge-sensor {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #4338ca;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .contact-card strong {
+            color: var(--text-heading);
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px 48px;
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .print-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #ffffff;
+            color: #1e293b;
+            border: 1px solid #cbd5e1;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 14px;
+        }
+
+        .print-btn:hover {
+            background-color: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                padding: 32px 16px;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+            .card {
+                padding: 24px 18px;
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+            header {
+                background: #ffffff;
+                color: #000000;
+                border-bottom: 2px solid #000000;
+                padding: 20px 0;
+            }
+            h1 {
+                color: #000000;
+            }
+            .card {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="app-badge">Official Google Play Privacy Policy</div>
+            <h1>Privacy Policy for Gyro Ball 3D</h1>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <span>Developer:</span>
+                    <strong>sam@developer</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Package Name:</span>
+                    <strong>com.aistudio.gyroball.wkqzjx</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Last Updated:</span>
+                    <strong>October 27, 2026</strong>
+                </div>
+            </div>
+            <button class="print-btn" onclick="window.print()">
+                🖨️ Print / Save as PDF
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="summary-box">
+                <h3>📌 Privacy Highlights at a Glance</h3>
+                <ul>
+                    <li><strong>Device Sensors:</strong> Gyroscope & Accelerometer data are computed 100% locally on your device for physics tilt mechanics and are NEVER recorded or transmitted.</li>
+                    <li><strong>Google AdMob:</strong> Third-party advertising partners display ads and may process device identifiers and advertising IDs to deliver relevant ads and prevent fraud.</li>
+                    <li><strong>Optional Cloud Save:</strong> If you sign in with Google, game records (stars, coins, completed levels, and leaderboard scores) sync securely via Firebase Firestore.</li>
+                    <li><strong>No Tracking of Personal Files:</strong> We do not access contacts, photos, storage, microphone, or precise GPS location.</li>
+                </ul>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>
+                This Privacy Policy applies to the mobile application <strong>Gyro Ball 3D</strong> (Package Name: <code>com.aistudio.gyroball.wkqzjx</code>), developed and published by <strong>sam@developer</strong> ("we", "us", or "our").
+            </p>
+            <p>
+                We are committed to protecting the privacy of our players. This document transparently explains what information is collected, how it is used, how it is protected, and your rights regarding your data when using Gyro Ball 3D.
+            </p>
+
+            <h2>2. Information We Process & Collect</h2>
+
+            <h3>A. On-Device Sensor Telemetry (Gyroscope & Accelerometer)</h3>
+            <p>
+                <span class="badge-sensor">Strictly On-Device</span> Gyro Ball 3D is a motion-controlled labyrinth game. The application listens to your device's physical gyroscope and accelerometer sensors to simulate real-world gravity and tilt physics.
+            </p>
+            <ul>
+                <li>Sensor data is processed in real-time in local memory (RAM) solely during active gameplay.</li>
+                <li><strong>Zero Transmission:</strong> Sensor data is never recorded, saved to persistent storage, or sent over the Internet to any remote servers.</li>
+            </ul>
+
+            <h3>B. Optional Account & Cloud Sync Data (Firebase)</h3>
+            <p>
+                <span class="badge-secure">Optional Sign-In</span> The app offers an optional cloud sync feature using Google Sign-In via Android Credential Manager and Firebase Firestore.
+            </p>
+            <p>If you choose to sign in to save your game progress across devices or compete on the global leaderboard, we process:</p>
+            <ul>
+                <li><strong>Account Credentials:</strong> Basic public profile information provided by Google Authentication (Display Name, Email address, and unique Google User ID / UID).</li>
+                <li><strong>Gameplay Records:</strong> Conquered levels, best completion times, earned stars, collected coins, unlocked ball skins/trails, and global leaderboard ranking entries.</li>
+            </ul>
+            <p><em>Note: If you do not sign in, game progress is stored strictly on your local device.</em></p>
+
+            <h3>C. Advertising & Diagnostic Information (Google AdMob)</h3>
+            <p>
+                <span class="badge-admob">AdMob Network</span> Gyro Ball 3D displays advertisements provided by Google AdMob (Google Mobile Ads SDK) to keep the game free to play. Google AdMob may automatically collect and process certain non-personally identifiable diagnostic information, including:
+            </p>
+            <ul>
+                <li>Google Advertising ID (AAID) / Device ID.</li>
+                <li>IP address (used to infer coarse location for regional ad delivery).</li>
+                <li>Device make, model, operating system version, and mobile network carrier.</li>
+                <li>Ad interaction telemetry (impressions, clicks, and load performance).</li>
+            </ul>
+
+            <h2>3. Summary Table of Permissions & Data Use</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature / Permission</th>
+                        <th>Type / Scope</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gyroscope & Accelerometer</strong></td>
+                        <td>Hardware Sensors (Local)</td>
+                        <td>Real-time 3D ball tilt simulation. 100% on-device; never saved or shared.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VIBRATE</strong></td>
+                        <td>Device Feature</td>
+                        <td>Haptic rumble vibration feedback when hitting walls, pitfalls, or collecting stars.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INTERNET & NETWORK_STATE</strong></td>
+                        <td>Network Access</td>
+                        <td>Loading Google AdMob interstitial ads, checking online status, and optional Firebase cloud sync.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Sign-In</strong></td>
+                        <td>Credential Manager</td>
+                        <td>Authenticating your user profile for cloud save and global leaderboard rankings.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. Third-Party Services & SDKs</h2>
+            <p>
+                Gyro Ball 3D integrates trusted third-party SDKs that process data in accordance with their respective privacy policies:
+            </p>
+            <ul>
+                <li>
+                    <strong>Google AdMob / Google Mobile Ads SDK:</strong> Used for displaying advertisements.
+                    <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+                    <br>Ad Settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a>
+                </li>
+                <li>
+                    <strong>Google Play Services:</strong> Core Android system services for authentication and security.
+                    <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+                </li>
+                <li>
+                    <strong>Firebase (Firestore & Authentication):</strong> Real-time database for game scores, leaderboards, and user authentication.
+                    <br>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>
+                </li>
+            </ul>
+
+            <h2>5. Data Retention & Account / Data Deletion</h2>
+            <p>
+                We respect your right to control your data:
+            </p>
+            <ul>
+                <li><strong>Local Data:</strong> You can completely erase all locally stored data, high scores, and settings at any time by clearing the application storage in Android Settings (<em>Settings &gt; Apps &gt; Gyro Ball 3D &gt; Storage &gt; Clear Data</em>) or by uninstalling the app.</li>
+                <li><strong>Cloud Data Deletion Request:</strong> If you have signed in with Google and wish to permanently delete your cloud account, saved records, and leaderboard entries from Firebase Firestore, you can submit a deletion request by emailing <strong><a href="mailto:sumitsamwalls@gmail.com">sumitsamwalls@gmail.com</a></strong> with your Google account email. All associated Firestore records will be permanently removed within 30 days.</li>
+            </ul>
+
+            <h2>6. Children's Privacy (COPPA Compliance)</h2>
+            <p>
+                Gyro Ball 3D is designed for general audiences and casual puzzle game players. We do not knowingly solicit or collect personal identification information from children under the age of 13 (or under the applicable age of digital consent in your jurisdiction).
+            </p>
+            <p>
+                If we discover that a child under 13 has provided us with personal information without verified parental consent, we will promptly delete such information from our servers. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
+            </p>
+
+            <h2>7. Security of Your Information</h2>
+            <p>
+                We implement industry-standard security protocols to safeguard data:
+            </p>
+            <ul>
+                <li>All network communications between the application and Google / Firebase servers utilize encrypted Transport Layer Security (HTTPS / TLS 1.3).</li>
+                <li>Firestore cloud storage is fortified with strict zero-trust security rules, guaranteeing that only authenticated users can access and update their respective user records.</li>
+            </ul>
+
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>
+                We may periodically update this Privacy Policy to reflect app updates, new features, or regulatory compliance requirements. Any revisions will be posted directly to this page with an updated "Last Updated" date. We encourage players to review this page periodically.
+            </p>
+
+            <h2>9. Contact Us</h2>
+            <div class="contact-card">
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the developer:</p>
+                <p>
+                    <strong>Developer Name:</strong> sam@developer<br>
+                    <strong>Application:</strong> Gyro Ball 3D<br>
+                    <strong>Package Name:</strong> com.aistudio.gyroball.wkqzjx<br>
+                    <strong>Contact Email:</strong> <a href="mailto:sumitsamwalls@gmail.com">sumitsamwalls@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gyro Ball 3D • sam@developer • All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
